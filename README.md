@@ -116,7 +116,7 @@ Avec les inputs récupérés, nous pouvons faire bouger notre player avec une ce
 
 ## Vous avez maintenant un player qui bouge et avec une animation distinct pour chaque direction !
 
-<img src=".ressources/FinalPlayer.gif">
+<img src=".ressources/BasicPlayer.gif">
 
 <br>
 
