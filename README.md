@@ -75,7 +75,8 @@ Vous pouvez dès à présent créer vos animations avec vos sprite sheets. Pour 
 
 Vous pouvez voir qu'il y a encore une erreur sur le __KinematicBody2D__ et qu'il demande une __CollisionShape2D__. 
 > Créez donc en un et placez bien la collision sur votre player.
-<br>
+<br/>
+
 # Mouvement du player
 
 Maintenant que votre player est fait, il suffit maintenant de créer un script qui permet de le faire bouger avec les touches du clavier.
@@ -106,11 +107,11 @@ Nous avons le ```_ready``` qui nous permet d'initialiser le player de ```_proces
 Pour avoir une speed configurable dans l'interface graphique, il suffit de faire un _export_ d'une variable.
 
 > Dans le _process, récupérez les input avec du joueur avec la fonction
-> ```__Input.is_action_pressed(string button)__```.
+> ```Input.is_action_pressed(string button)```.
 
 Avec les inputs récupérés, nous pouvons faire bouger notre player avec une certaine vélocité.
 
-> A l'aide de la fonction ```__move_and_slide(velocity)__```, faites bouger votre player avec les inputs récupéré.
+> A l'aide de la fonction ```move_and_slide(velocity)```, faites bouger votre player avec les inputs récupéré.
 
 > Vous pouvez changer l'animation du player en changeant directant la valeur de __AnimatedSprite__ comme ceci: ```$AnimatedSprite.animation = string```
 
