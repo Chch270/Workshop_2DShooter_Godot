@@ -106,16 +106,16 @@ Nous avons le ```_ready``` qui nous permet d'initialiser le player de ```_proces
 
 Pour avoir une speed configurable dans l'interface graphique, il suffit de faire un _export_ d'une variable.
 
-> Dans le _process, récupérez les input avec du joueur avec la fonction
+> Dans le _process, récupérez les inputs du joueur avec la fonction
 > ```Input.is_action_pressed(string button)```.
 
 Avec les inputs récupérés, nous pouvons faire bouger notre player avec une certaine vélocité.
 
-> A l'aide de la fonction ```move_and_slide(velocity)```, faites bouger votre player avec les inputs récupéré.
+> A l'aide de la fonction ```move_and_slide(velocity)```, faites bouger votre player avec les inputs récupérés.
 
-> Vous pouvez changer l'animation du player en changeant directant la valeur de __AnimatedSprite__ comme ceci: ```$AnimatedSprite.animation = string```
+> Vous pouvez changer l'animation du player en changeant directement la valeur de __AnimatedSprite__ comme ceci: ```$AnimatedSprite.animation = string```
 
-## Vous avez maintenant un player qui bouge et avec une animation distinct pour chaque direction !
+## Vous avez maintenant un player qui bouge avec une animation distincte pour chaque direction !
 
 <img src=".ressources/BasicPlayer.gif">
 
@@ -128,8 +128,10 @@ Avec les inputs récupérés, nous pouvons faire bouger notre player avec une ce
 > Configurez le clic de souris comme étant le bouton de tir.
 
 ## Creation des bullets
+
 Si vous avez bien suivi tout le tuto, vous savez créer une scène, un objet et un script.
-> Créez une scène __Bullet__ qui sera la bullet en __KinematicBody2D__, un __Sprite__ et un script qui lui fait avancer tout droit avec une vitesse modifiable via l'interface graphique.
+
+> Créez une scène __Bullet__ qui sera la bullet en __KinematicBody2D__, un __Sprite__ et un script qui le fera avancer tout droit avec une vitesse modifiable via l'interface graphique.
 
 ## Instanciation des bullets
 Ce qu'on va faire, c'est qu'on va preload la scene __Bullet__, et à chaque fois que l'on tire, on va instancier une __Bullet__.
@@ -138,7 +140,7 @@ Ce qu'on va faire, c'est qu'on va preload la scene __Bullet__, et à chaque fois
 
 > ```var newBullet = bulletScene.instance()``` pour instancier une bullet
 
-Pour que les bullets ne soient perdus après l'instanciation, il faut les rajouter en tant que child du player.
+Pour que les bullets ne soient pas perdus après l'instanciation, il faut les rajouter en tant que child du player.
 
 >```add_child(newBullet)``` pour les rajouter en tant qu'enfant du player
 
@@ -146,7 +148,7 @@ Pour que les bullets ne soient perdus après l'instanciation, il faut les rajout
 
 Il est temps de gérer son temps. Pour cela, rajoutez un __Timer__ au player qui sera donc son cooldown afin de retirer à nouveau.
 
-> Créz un __Timer__ dans le player et mettez le cooldown à 0.5.
+> Créz une node __Timer__ en enfant du player et mettez le cooldown à 0.5.
 
 > Cochez _one shot_ afin que le __Timer__ commence lorsque l'on le souhaite.
 
