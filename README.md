@@ -11,7 +11,7 @@
 </p>
 
 Vous n'avez qu'a installer la version standard de godot et de lancer le binaire qui se trouve dedans.
-# Création d'un ouveau projet
+# Création d'un nouveau projet
 
 > Vous allez arriver ici:
 
