@@ -102,7 +102,7 @@ On peut commencer la partie intéressante: Le code !
 
 > Créez un script qui va se lier au  __KinematicBody2D__ du player.
 
-Nous avons le ```_ready``` qui nous permet d'initialiser le player de ```_process``` qui nous permet de faire des choses chaque frames.
+Nous avons le ```_ready``` qui nous permet d'initialiser le player et ```_process``` qui nous permet de faire des choses chaque frame.
 
 Pour avoir une speed configurable dans l'interface graphique, il suffit de faire un _export_ d'une variable.
 
