@@ -201,4 +201,5 @@ Grâce à ce tutorial, vous avez appris à créer une scene, ajouter des childs 
 
 ## Contributors
 
-- Charlie Chou [![github-link][github-logo]](https://github.com/Chch270)
+- Charlie Chou
+- Romain Minguet
